@@ -7,18 +7,37 @@
 //
 
 #import "ViewController.h"
+#import "ZHYToolbar.h"
+@interface ViewController ()<UITextFieldDelegate>
 
-@interface ViewController ()
-
+@property (strong, nonatomic) UITextField * textField;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    ZHYToolbar *bar = [[ZHYToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+    [bar.doneBtn addTarget:self action:@selector(dismissKeyBoard) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITextField * textField = [[UITextField alloc] initWithFrame:CGRectMake(50, 300, 200, 50)];
+    textField.backgroundColor = [UIColor redColor];
+    textField.keyboardType = UIKeyboardTypeNumberPad;
+    textField.delegate = self;
+    self.textField = textField;
+    [textField setInputAccessoryView:bar];
+    
+    [self.view addSubview:textField];
+    
 }
 
+- (void)dismissKeyBoard{
+    
+    
+    [self.textField resignFirstResponder];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -15,6 +15,7 @@
 		C83A4026205A3DD700F0E537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A4025205A3DD700F0E537 /* main.m */; };
 		C83A4030205A3DD700F0E537 /* ZYHKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A402F205A3DD700F0E537 /* ZYHKeyboardTests.m */; };
 		C83A403B205A3DD700F0E537 /* ZYHKeyboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A403A205A3DD700F0E537 /* ZYHKeyboardUITests.m */; };
+		C83A404A205A43E800F0E537 /* ZHYToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C83A4049205A43E800F0E537 /* ZHYToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		C83A4036205A3DD700F0E537 /* ZYHKeyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYHKeyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83A403A205A3DD700F0E537 /* ZYHKeyboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYHKeyboardUITests.m; sourceTree = "<group>"; };
 		C83A403C205A3DD700F0E537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83A4048205A43E800F0E537 /* ZHYToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHYToolbar.h; sourceTree = "<group>"; };
+		C83A4049205A43E800F0E537 /* ZHYToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHYToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				C83A4021205A3DD700F0E537 /* LaunchScreen.storyboard */,
 				C83A4024205A3DD700F0E537 /* Info.plist */,
 				C83A4025205A3DD700F0E537 /* main.m */,
+				C83A4048205A43E800F0E537 /* ZHYToolbar.h */,
+				C83A4049205A43E800F0E537 /* ZHYToolbar.m */,
 			);
 			path = ZYHKeyboard;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83A401B205A3DD700F0E537 /* ViewController.m in Sources */,
+				C83A404A205A43E800F0E537 /* ZHYToolbar.m in Sources */,
 				C83A4026205A3DD700F0E537 /* main.m in Sources */,
 				C83A4018205A3DD700F0E537 /* AppDelegate.m in Sources */,
 			);
